@@ -19,9 +19,9 @@ function Summary() {
                   <span>{list.category}</span>{" "}
                 </div>
                 <div className="list-right">
-                  <div className="dark-list">{list.score}</div> 
-                  <div className="light-list">/</div>
-                  <div className="light-list">100</div>
+                  <span class="dark-list">{list.score}</span>
+                  <span class="light-list">/</span>
+                  <span class="light-list">100</span>
                 </div>
               </>
             }
