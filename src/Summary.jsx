@@ -1,7 +1,8 @@
 import React from "react";
-import lists from "../assets/data";
+import lists from "./data";
+// import svg from "../../public/images";
 function Summary() {
-  const numbers = [1,2,3,4]
+ 
   let num = 1
   return (
     <section className="summary">
@@ -19,9 +20,9 @@ function Summary() {
                   <span>{list.category}</span>{" "}
                 </div>
                 <div className="list-right">
-                  <span class="dark-list">{list.score}</span>
-                  <span class="light-list">/</span>
-                  <span class="light-list">100</span>
+                  <span className="dark-list">{list.score}</span>
+                  <span className="light-list">/</span>
+                  <span className="light-list">100</span>
                 </div>
               </>
             }

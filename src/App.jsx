@@ -1,14 +1,14 @@
 import './App.css'
-import Result from './components/Result'
-import Summary from './components/Summary'
+import Result from './Result';
+import Summary from './Summary';
 
 function App() {
 
   return (
     <main>
       <div className="box">
-        <Result />
-        <Summary />
+       <Result />
+       <Summary />
       </div>
     </main>
   );
