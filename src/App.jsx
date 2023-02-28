@@ -6,8 +6,10 @@ function App() {
 
   return (
     <main>
-      <Result />
-      <Summary />
+      <div className="box">
+        <Result />
+        <Summary />
+      </div>
     </main>
   );
 }

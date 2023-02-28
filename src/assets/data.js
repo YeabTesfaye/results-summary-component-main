@@ -1,4 +1,4 @@
-const datas = [
+const lists = [
   {
     id: 1,
     category: "Reaction",
@@ -25,4 +25,4 @@ const datas = [
   },
 ];
 
-export default datas;
+export default lists;

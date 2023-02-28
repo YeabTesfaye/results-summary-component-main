@@ -1,18 +1,29 @@
 import React from "react";
-import datas from "../assets/data";
+import lists from "../assets/data";
 function Summary() {
+  const numbers = [1,2,3,4]
+  let num = 1
   return (
     <section className="summary">
-      <h1 className="heading">Summary</h1>
-      <article className="datas">
-        {datas.map((data) => (
-          <div key={data.id}>
+      <div className="summary-txt">
+        <p>Summary</p>
+      </div>
+      <article className="summary-list">
+        {lists.map((list) => (
+          <div key={list.id} className={`list-${num++} list`}>
             {
-              <div className={`data ${data.category}`}>
-                {" "}
-                <img src={data.icon} alt={data.category} />
-                <p className="catagory">{data.category}</p> <p className="score">{data.score}/<span>100</span></p>
-              </div>
+              <>
+                <div className="list-left">
+                  {" "}
+                  <img src={list.icon} alt={list.category} />
+                  <span>{list.category}</span>{" "}
+                </div>
+                <div className="list-right">
+                  <div className="dark-list">{list.score}</div> 
+                  <div className="light-list">/</div>
+                  <div className="light-list">100</div>
+                </div>
+              </>
             }
           </div>
         ))}
